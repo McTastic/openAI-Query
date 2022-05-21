@@ -1,0 +1,86 @@
+body {
+  background: rgb(40, 39, 90);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffff;
+}
+.topText {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-family: "Heebo";
+  background: linear-gradient(315deg, #ebf928 0%, #d425b5 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.topText h1 {
+  font-size: 80px;
+}
+
+.formContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 6em;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 8px 8px 15px rgb(3, 7, 49);
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+.form-label {
+  margin-top: 12px;
+}
+.btn {
+  margin: auto;
+  margin-bottom: 1em;
+}
+.form-control {
+  width: 85%;
+  padding: 2em;
+  margin: auto;
+  color: rgb(92, 255, 12);
+  font-weight: bold;
+  font-family: "Roboto Mono";
+  letter-spacing: 2px;
+  font-size: 22px;
+  background: rgb(0, 0, 0);
+}
+.form-control:focus {
+  background: rgb(4, 5, 5);
+  font-weight: bold;
+  color: rgb(92, 255, 12);
+}
+.bottomContainer,
+.responseList{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.responseList{
+    flex-direction: row;
+    margin: auto;
+    color: rgb(92, 255, 12);
+    background: black;
+    font-family:"Roboto Mono";
+    padding: 1em;
+    width: 50%;
+
+}
+.bottomContainer h2{
+    margin: 2em 2em 0 2em;
+    font-size: 58px;
+}
+.leftText,
+.rightText{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+.leftText{
+    align-items: flex-end;
+}
+.rightText{
+    margin: auto
+}
