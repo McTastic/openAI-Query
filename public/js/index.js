@@ -3,7 +3,6 @@ const responseListEl = document.querySelector(".responseList");
 const promptTextEl = document.querySelector(".promptText");
 const promptResponseEl = document.querySelector(".responseText");
 let responses = 0;
-let responseObj = {};
 
 const init = () => {
   if (responses === 0) {

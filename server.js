@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3001;
 const path = require("path");
 const got = require("got");
 const fs = require("fs");
@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
-const apiURL = "https://api.openai.com/v1/engines/davinci/completions";
+const apiURL = "https://api.openai.com/v1/engines/babbage/completions";
 const destination = "./db/query.json";
 
 app.post("/api", async (req, res) => {
